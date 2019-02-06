@@ -22,6 +22,9 @@
 	echo '<hr>';
 
 	if($date1 < $date2){
+		$sql = 'delete from tb_time where id=1';
+		$result = mysqli_query($con,$sql);
+
 		echo 'del';
 		unlink('./upload/test.txt');
 	} else {
